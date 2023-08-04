@@ -1,0 +1,109 @@
+:root {
+    /*---------Light Theme---------*/
+    --bg-color: rgb(243, 243, 243);
+    --text-color: rgb(7, 7, 7);
+    --shadow-color: rgba(0,0,0,0.3); 
+
+    /*----------Dark Theme---------*/
+    /* --bg-color: rgb(7, 7, 7);
+    --text-color: rgb(243, 243, 243);
+    --shadow-color: rgba(240,240,240,0.3); */
+
+    --secondary-color: rgb(246, 153, 6); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--bg-color);
+    padding: 10px 0px;
+}
+
+header ul {
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header h1 {
+    color: var(--secondary-color);
+}
+
+header li:nth-child(2) {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+/*Calculator CSS*/
+.calculator{
+    margin-top: 40px;
+    padding: 20px;
+}
+.outer-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.outer-container .text-box {
+    padding: 10px; 
+}
+
+.outer-container .text-box input {
+    height: 50px;
+    width: 19vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.55rem;
+    border: 2px solid var(--bg-color);
+}
+
+.inner-container {
+    display: grid;
+    justify-content: center;
+}
+
+.inner-container .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0px;
+
+}
+
+.inner-container .row button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: none;
+    margin: 0px 8px;
+    font-size: 1.4rem;
+}
+.outer-container .tag{
+    margin-top: 16px;
+    color: var(--secondary-color);
+}
+.btn{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.operator{
+    background-color: var(--secondary-color);
+}
+.answer{
+    background-color: var(--secondary-color);
+}
+.btn:hover{
+    background-color: rgb(218, 218, 218);
+}
